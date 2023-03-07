@@ -1,0 +1,38 @@
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  max-height: 100vh;
+}
+
+.socialLink ul {
+  li {
+    margin-bottom: 1rem;
+    i {
+      font-size: 2rem;
+      color: green;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .socialLink {
+    width: 100%;
+
+    ul {
+      // width: 100%;
+      // justify-content: space-evenly;
+      li {
+        display: inline-block;
+        margin-right: 2rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
